@@ -2,3 +2,38 @@
     margin: 0px;
     padding: 0px;
 }
+header {
+    background-color: tan;
+}
+ul {
+    list-style-type: none;
+}
+ul li{
+    display: inline-block;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: tan;
+}
+.dropdown li{
+    display: block;
+}
+.dropdown li a{
+    width: 100%;
+}
+li a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+    background-color: white;
+    color: tan;
+}
+li :hover > .dropdown{
+    display: block;
+}
+
