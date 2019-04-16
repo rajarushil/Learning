@@ -12,7 +12,7 @@ ul li{
     display: inline-block;
 }
 .dropdown{
-    display: none;
+     display: none;
     position: absolute;
     background-color: tan;
 }
@@ -27,13 +27,14 @@ li a{
     padding: 20px;
     text-decoration: none;
     color: white;
+    transition: all 0.3s;
 }
 
 li a:hover{
     background-color: white;
     color: tan;
 }
-li :hover > .dropdown{
+li:hover > .dropdown{
     display: block;
 }
 

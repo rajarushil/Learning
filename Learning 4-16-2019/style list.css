@@ -1,0 +1,26 @@
+*header{
+    color: black;
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+}
+ol{
+    list-style-type: none;
+}
+ol li{
+   padding: 20px;
+    color: slategray;
+}
+ol li:first-child{
+    background-color: black;
+}
+ol li:nth-child(odd){
+    background-color: skyblue;
+}
+ol li:nth-child(even){
+    background-color: gold;
+}
+ol li:last-child{
+    background-color: brown;
+}
