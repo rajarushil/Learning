@@ -61,16 +61,114 @@ background: linear-gradient(to right, #D7DDE8, #757F9A),(img/cover.jpg); /* W3C,
     flex-wrap: wrap;
 }
 .card{
-    flex-basis: 250px;
-    max-width: 400px;
+    flex-basis: 200px;
+    flex-grow: 1;
+    max-width: 350px;
     margin: 10px;
-    box-shadow: (0px 0px 15px rgba(0,0,0,.1);
+    box-shadow: 0px 0px 5px rgba(0,0,0,.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s;
 }
-.card .card-img {
+.card:hover{
+    box-shadow: 0px 0px 25px rgba(0,0,0,.2);
+}
+.card .card-img{
     height: 200px;
     overflow: hidden;
+    transform: scale(0.95);
+    box-shadow: 0px 0px 20px rgba(0,0,0,.2);
+    transition: transform 0.3s;
 }
+.card:hover .card-img{
+    transform: scale(1);
+}
+
 .card .card-img img{
     height: 100%;
     min-width: 100%;
 }
+.card .card-title{
+    padding: 10px;
+}
+.card .card-desc{
+    padding: 10px;
+    padding-top: 0px;
+    margin-bottom: 20px;
+}
+.card .call-to-action{
+    margin: 10px;
+    margin-top: auto;
+    align-self: flex-start;
+    
+}
+.card .call-to-action a{
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #8e9ea1;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition-property: border, background-color, color;
+    transition-duration: 0.3s;
+}
+.card .call-to-action a:hover{
+    border: 2px solid #8e9ea1;
+    background-color: transparent;
+    color: #8e9ea1;
+
+}
+
+#showcase{
+    display: flex;
+}
+#showcase aside{
+    flex-basis: 300px;
+    background-color: #fff;
+    flex-shrink: 0;
+}
+#showcase aside h3{
+    padding: 15px;
+}
+#showcase aside a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s;
+}
+#showcase aside a:hover{
+    background-color: rgba(0,0,0,.1);
+}
+#showcase aside ul{
+    list-style-type: none;
+}
+
+#footer{
+    background-color: teal;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 720px){
+    header{
+        flex-direction: column;
+    }
+    #logo{
+        order: -1;
+    }
+    #showcase aside{
+        display: none;
+    }
+    #intro h1{
+        font-size: 1.5em;
+    }
+    #intro p{
+        width: 80%;
+    }
+}
+
