@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 500px;
+            background-image: url(img/anthony-delanoix-28851.jpg);
+            background-size: cover;
+            background-position: 0%;
+            transition: background-position 0.3s;
+        }
+        .container:hover{
+            background-position: 50%;
+        }
+        .container:hover .text{
+            opacity: 1;
+        }
+        .text{
+            background-color: rgba (0,0,0,.5);
+            height: 100%;
+            padding-top: 150px;
+            text-align: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .text h1{
+            font-size: 3em;
+            padding: 20px;
+        }
+        .text p{
+            width: 70%;
+            margin:auto;
+        }
+        
+        .card-container{
+            text-align: center;
+            padding: 20px;
+        }
+        .card-container h3{
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        .card-container button{
+            padding: 20px;
+            border: none;
+            background-color: rebeccapurple;
+            color: #fff;
+            margin: 20px auto;
+            display: block;
+            cursor: pointer;
+        }
+        .card-container button:hover~ .card{
+             opacity: 1;   
+        }
+        .card{
+            width: 40%;
+            margin: 10px;
+            display: inline-block;
+            box-shadow: 0px 0px 5px
+            rgba(0,0,0,0.4);
+            opacity:0 ;
+            transition: opacity 0.3s;
+        }
+        .card:first-child{
+            transition-delay: 0.3s;
+        }
+        .card:last-child{
+            transition-delay: 0.5s;
+        }
+        .card .card-img{
+            height: 200px;
+        }
+        .card .card-img img{
+            height: 100%;
+            width: 100%
+        }
+        .card .card-description{
+            padding: 10px;
+        }
+        
+        .card-container h3{
+            color: tomato;
+        }
+    </style>
+    
+    
+    
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Trial trial page</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, itaque ipsam. Quibusdam blanditiis, cupiditate nobis iure obcaecati, excepturi eum quam dolorum quo sequi ratione aspernatur numquam est repellendus itaque at.
+            </p>
+        </div>
+        
+    </div>
+    
+<div class="card-container">
+    <h3>Transitions</h3>
+    <button>Try Me</button>
+    <div class="card">
+        <div class="card-img">
+            <img src="img/1.jpg" alt="">
+        </div>
+    <div class="card-description">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati id fuga tempore odit asperiores eligendi aperiam qui dolores quaerat repellendus, officiis natus nostrum, molestiae vero illum quos esse amet alias.</p>
+    </div>
+    </div>
+    <div class="card">
+        <div class="card-img">
+            <img src="img/1.jpg" alt="">
+        </div>
+    <div class="card-description">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati id fuga tempore odit asperiores eligendi aperiam qui dolores quaerat repellendus, officiis natus nostrum, molestiae vero illum quos esse amet alias.</p>
+    </div>
+    </div>
+</div>
+</body>
+</html>
