@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .card-container{
+            width: 80;
+            margin: 50px auto;
+        }
+        .card{
+            height: 250px;
+            width: 250px;
+            margin: 20px auto;
+        }
+        .card-img{
+            height:250px;
+            width: 250ps;
+        }
+        .card-img img{
+            width: 100%;
+            height: 100%;
+        }
+        
+        #one:hover{
+            transform: scale(1.2);
+        }
+        #one{
+            transition: transform 0.3s cubic-bezier(.49,1.58,.64,-0.26);
+        }
+        #two .card-img{
+            overflow: hidden;
+        }
+        #two img{
+            transform: scale(1.1) rotate(10deg);
+            transition: transform 0.3s cubic-bezier(.49,1.58,.64,-0.26);
+            
+        }
+        #two:hover img{
+            transform: scale(1) rotate(0)
+        }
+        
+        
+    </style>
+    
+    
+    
+    
+    
+</head>
+<body>
+    <div class="card-container">
+        <div class="card" id="one">
+            <div class="card-img">
+                <img src="../img/1.jpg" alt="">
+            </div>
+        </div>
+        
+                <div class="card" id="two">
+            <div class="card-img">
+                <img src="../img/1.jpg" alt="">
+            </div>
+        </div>
+        
+        
+    </div>
+    
+    
+    
+</body>
+</html>
