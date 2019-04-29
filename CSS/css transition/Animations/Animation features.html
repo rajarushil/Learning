@@ -16,34 +16,37 @@
         }
         .card{
             height: 250px;
-            width: 250px;
+            width: 200px;
             margin: 20px auto;
+            
+            cursor: pointer;
         }
-        .card-img{
+       
+       /* .card-img{
             height:250px;
             width: 250ps;
-        }
+        }*/
         .card-img img{
-            width: 100%;
-            height: 100%;
+            width: 250%;
+            height: 200%;
         }
         
         #one:hover{
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
         #one{
             transition: transform 0.3s cubic-bezier(.49,1.58,.64,-0.26);
         }
-        #two .card-img{
+        #two {
             overflow: hidden;
         }
         #two img{
-            transform: scale(1.1) rotate(10deg);
-            transition: transform 0.3s cubic-bezier(.49,1.58,.64,-0.26);
+            transform: rotate(5deg) scale(1.2) ;
+            transition: transform 0.3s;
             
         }
         #two:hover img{
-            transform: scale(1) rotate(0)
+            transform: scale(1) rotate(0deg);
         }
         
         
