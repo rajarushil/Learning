@@ -1,0 +1,16 @@
+h1{
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    background-color: khaki;
+    color:skyblue;
+    font-size: 2.8em;
+}
+p{
+    padding: 20px;
+    margin: 20px;
+    background-color: khaki;
+    font-size: 1.5em;
+    word-wrap: break-word;
+    letter-spacing: 8px;
+}
