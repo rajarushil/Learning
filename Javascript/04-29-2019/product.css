@@ -1,0 +1,24 @@
+h1{
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: aquamarine;
+    color: black;
+    font-size: 3em;
+}
+p{
+    padding: 20px;
+    margin: 20px;
+    font-size: 1.5em;
+}
+.info{
+    background-color: tomato;
+}
+.error{
+    background-color: red;
+    color: white;
+}
+.success{
+    background-color: greenyellow;
+    color: dimgray;
+}
