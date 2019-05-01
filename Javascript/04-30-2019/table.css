@@ -1,0 +1,19 @@
+h1{
+    padding: 20px;
+    margin: 20px;
+    background-color: #ececec;
+    text-align: center;
+    font-size: 2.5em;
+    color: blueviolet;
+}
+ul{
+    list-style-type: none; 
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    padding: 20px;
+    margin: 10px 20px;;
+    background-color: #ececec;
+    font-size: 1.5em;
+}
