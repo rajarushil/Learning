@@ -1,0 +1,17 @@
+h1{
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: cornflowerblue;
+    color: darkslategray;
+    text-transform: capitalize;
+}
+p{
+    padding: 20px;
+    margin: 20px;
+    font-size: 1.3em;
+    background-color: goldenrod
+}
+p strong{
+    background-color: greenyellow;
+}
