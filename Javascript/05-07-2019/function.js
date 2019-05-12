@@ -40,5 +40,24 @@ function smallVal(){
     }
     return res;
 }
+function multiplicationOfTwoNumbers(){
+    x=a*b
+    x define= 
+        datatype variablname =value;
+    int x=10;
+    aler(x);
+    int a;
+    int b;
+    x=a*b;
+    alert(x)
+    datype variablename =value;
+    
+   
+    
+    string result="name"+"name2";
+    string[]= {"sabdeep","raju","1","2"}
+    
+    
+}
 
 console.log(smallVal([5,6,8,3,9,3,4],[5,6,9,7]));
