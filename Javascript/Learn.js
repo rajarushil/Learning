@@ -52,3 +52,18 @@ xushil
 else 
 alert(its not divisble /2)
 
+
+
+
+
+
+for(i=0; i < str.length; i++){  //fixed spelling from 'str.lenght'
+        if (str.charAt(i) == "-") {
+            chart = "_";
+            string = string + chart;
+        }
+        else {
+            chart = str.charAt(i);
+            string = string + chart;
+        }
+    }
