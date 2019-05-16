@@ -11,11 +11,13 @@ function enterName(){
         
    var char = str.charAt(i);
       if(str.charAt(i)=='r'){
-          str=str.replace(char,'x');
+          str=str.replace(char,'x' );
       }
     
 }
 alert (str);
 }
     //showing result as alert
+
+
 
