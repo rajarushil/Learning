@@ -26,3 +26,9 @@ function isString(arg){
     return typeof arg==="string"
 }
 console.log(isString(""))
+
+
+
+
+
+
