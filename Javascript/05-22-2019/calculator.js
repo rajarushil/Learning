@@ -23,8 +23,3 @@ keys.addEventListener('click', (event) => {
     console.log('operator', target.value);
     return;
   }
-
-  if (target.classList.contains('decimal')) {
-    console.log('decimal', target.value);
-    return;
-  }
