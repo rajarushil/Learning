@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>CALCULATOR</title>
+    <link rel="stylesheet" href="calc.css">
 </head>
 <body>
-    <input type="text" id="t1"/>
-    <input type="text" id="t2"/>
+   
+   <h1>Calculator</h1>
+   <p>
+    <input type="text" id="t1" placeholder="First Number" /><br> 
+    <input type="text" id="t2" placeholder="Second Number" /><br>
     
-   <select id="operators">
+   <select id="operators" >
             <option value="+">+</option>
             <option value="-">-</option>
             <option value="/">/</option>
-            <option value="X">X</option>
+            <option value="X">*</option>
         </select>
-        
+        <br>
         
         <button onclick="calc();">=</button>
-        <input type="text" id="result"/>
+        <input type="text" id="result" placeholder="Result"/>
+        </p>
 </body>
 </html>

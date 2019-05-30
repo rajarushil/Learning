@@ -1,0 +1,27 @@
+h1{
+    padding: 20px;
+    font: 2em;
+    color: gray;
+}
+p{
+   background-color: ghostwhite;
+    color: black;
+    margin: 10PX;
+}
+#t1{
+    margin: 10PX;
+}
+#t2{
+    margin: 10PX;
+}
+#operators{
+    margin-bottom: 10PX;
+    margin-left: 20px;
+}
+button{
+    font-size: 1em ;
+}
+#result{
+    padding: 5px;
+    margin-left: 15px;
+}
