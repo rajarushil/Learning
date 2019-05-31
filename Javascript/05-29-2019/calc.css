@@ -16,10 +16,11 @@ p{
 }
 #operators{
     margin-bottom: 10PX;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 button{
     font-size: 1em ;
+    margin-left: 10px;
 }
 #result{
     padding: 5px;
