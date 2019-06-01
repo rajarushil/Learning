@@ -25,3 +25,4 @@ function calc()
                     document.getElementById('result').value = t1*t2;
                 }
             }
+result;
