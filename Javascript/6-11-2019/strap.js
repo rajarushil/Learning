@@ -4,6 +4,8 @@ function multiply(){
 
     
     document.getElementById("result").innerHTML = num * 2;
+    document.getElementById("result").innerHTML = num * 3 ;
+    
     
     
 }
