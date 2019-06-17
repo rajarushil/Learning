@@ -27,3 +27,4 @@ function showTime(){
 }
 
 showTime();
+result();
