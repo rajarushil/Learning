@@ -1,0 +1,19 @@
+1.PROBLEMS
+  Could not able to locate animation
+  Vertical Divider.
+  Say hello form creation.
+  Space on the top of the homepage
+
+2. Issues with HTML
+	Link up with css
+	Only heading outline using css for html
+	
+
+issue understanding grid 		
+partial flex in csss		
+align items		
+aside doesn’t work in the page 		
+
+Hiding overflow
+
+linking js page 
