@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <label>Bill Amount: </label><input type="text" id="billInput">
+
+<br><br>
+
+<button class="tenPercent">Tip 10%</button>
+<br>
+<button class="fifteenPercent">Tip 15%</button>
+<br>
+<button class="twentyPercent">Tip 20%</button>
+<br><br>
+<label>Custom Tip Percentage: </label><input type="text" id="customTip"> <button class="customTipBtn">Tip Custom Amount</button>
+
+<br><br>
+
+<p id="tipAmount"></p>
+
+<script>
+    function calcTip(bill, percent) {
+    return bill * percent / 100;
+}
+
+function getMessage(tip, percent) {
+    return 'A ' + percent + ' percent tip would equal $' + tip;
+}
+
+function updateFunc(billInput, tipSuggestion) {
+    // Here I use closure to save billInput and tipSuggestion
+    return function(percent) {
+        var bill = parseFloat(billInput.value) || 0;
+        tipSuggestion.innerHTML = getMessage(calcTip(bill, percent), percent);
+    }
+}
+
+var tenPerBtn = document.querySelector('.tenPercent');
+var fifteenPerBtn = document.querySelector('.fifteenPercent');
+var twentyPerBtn = document.querySelector('.twentyPercent');
+var customPerBtn = document.querySelector('.customTipBtn');
+var bill = document.getElementById('billInput');
+var tipSuggestion = document.getElementById('tipAmount');
+
+var update = updateFunc(bill, tipSuggestion);
+
+tenPerBtn.addEventListener('click', function() { update(10); });
+fifteenPerBtn.addEventListener('click', function() { update(15); });
+twentyPerBtn.addEventListener('click', function() { update(20); });
+customPerBtn.addEventListener('click', function() { update(document.querySelector('#customTip').value); });
+    
+</script>
+</body>
+</html>
