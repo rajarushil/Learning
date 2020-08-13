@@ -1,2 +1,0 @@
-FROM customers
-TO order_items_notes
